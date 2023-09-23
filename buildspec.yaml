@@ -10,7 +10,7 @@ phases:
   pre_build:
     commands:
       ## Install NPM dependencies in both the Angular and Express source folders
-      - cd portfolio ##Angular app source folder name
+      - cd my-portfolio ##Angular app source folder name
       - npm install
       - cd ../express
       - npm install ##Express app source folder name
@@ -18,7 +18,7 @@ phases:
   build:
     commands:
       ## angular.josn outputPath is set to ../dist/public which is the Express apps static files folder.
-      - cd portfolio
+      - cd my-portfolio
       - ng build --prod
       - cd ../express
       ## the tsconfig.json file for the Express app has the compilerOptions.outDir set to ../dist
