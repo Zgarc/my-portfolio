@@ -63,7 +63,7 @@ export class AppComponent {
     if (!newButton.contains(ACTIVE_BUTTON)) {
       newButton.add(ACTIVE_BUTTON);
     }
-    // this.blogButton.nativeElement.classList.add(ACTIVE_BUTTON)
+    
     this.activeSection = section;
   }
 
